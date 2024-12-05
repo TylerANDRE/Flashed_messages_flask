@@ -1,0 +1,17 @@
+.message{
+    border: inherit solid 3px;
+    color: white;
+    padding: 7px;
+    background-color: inherit;
+}
+.failure{
+    border: darkred solid 3px;
+    background-color: rgba(132,0,0,0.25);
+    color: black;
+}
+.success{
+    border: olivedrab solid 3px;
+    background-color: rgba(13,132,0,0.25);
+
+    color: black;
+}

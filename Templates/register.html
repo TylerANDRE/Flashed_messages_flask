@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="heading">Register an account</h1>
+<div class="register_container">
+    <form action="{{ url_for('register') }}" method="post">
+        <!-- Input for username -->
+        <label for="username" class="username">Username:</label>
+        <input type="text" class="username" id="username" name="username" placeholder="Please enter a username..." required>
+        <!-- Input for user's password -->
+        <label for="password" class="password">Password:</label>
+        <input type="text" class="password" id="password" name="password" placeholder="Please enter a password..." required>
+        <!-- Input to confirm password -->
+        <label for="password_confirm" class="password_confirm">Confirm Password:</label>
+        <input type="text" class="password_confirm" id="password_confirm" name="password_confirm" placeholder="Please confirm your password..." required>
+        <!-- Submit Button -->
+        <button type="submit" class="login_submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
