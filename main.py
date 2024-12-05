@@ -49,35 +49,6 @@ def register():
                     flash('An error occurred while adding the new user', 'failure')
     return render_template('register.html')
 
-# Generates the route for the login page
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    return render_template('login.html')
-
-# Generates the route for the logout page
-@app.route('/logout', methods=['GET', 'POST'])
-def logout():
-    return redirect(url_for('index'))
-
-# Generates the route for the workouts page
-@app.route('/workouts')
-def workouts():
-    return render_template('workouts.html')
-
-# Generates the route for the about page
-@app.route('/about')
-def about():
-    return render_template('about.html')
-
-# Generates the route for the diets page
-@app.route('/diets')
-def diets():
-    return render_template('diets.html')
-
-# Generates the route for the PT Booking page
-@app.route('/PT-book', methods=['GET', 'POST'])
-def PTbook():
-    return render_template('PTbook.html')
 
 # Runs the code in debug mode. Also generates anything to do with the database such as tables and data.
 if __name__ == '__main__':
